@@ -97,12 +97,13 @@ def sample_educativa_data():
 @pytest.fixture
 def sample_educativa_familiar_data():
     """Sample data for educational family responses."""
+    from datetime import date
     return {
         'colegio': 'Colegio San Patricio',
         'ciudad_colegio': 'Bogotá',
         'depto_colegio': 'Cundinamarca',
         'municipio_colegio': 'Bogotá D.C.',
-        'fecha_graduacion': '2020-12-15'
+        'fecha_graduacion': date(2020, 12, 15)  # Use date object instead of string
     }
 
 
